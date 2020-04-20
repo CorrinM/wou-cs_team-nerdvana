@@ -6,6 +6,7 @@
 
 <div class="container-fluid">
     <!--========================== WHOLE DAMNED FORM IN HERE =============================-->
+    <!-- using needs to look like this for profile pictures to get uploaded -->
     @using (Html.BeginForm("Edit", "ProfilePage", FormMethod.Post,
         new { @class = "form", role = "form", enctype = "multipart/form-data" }))
     {

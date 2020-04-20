@@ -3,24 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Web.Mvc;
-
 using Petopia;
 using Petopia.Controllers;
-
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Petopia_tests
 {
-    class Corrin    // did this go up now?
+    [TestClass]
+    public class Corrin
     {
         [TestMethod]
-        public void PetsCreate()
+        public void BadgesCreate()
         {
             // Arrange
-            PetsController petController = new PetsController();
+            BadgesController badgeController= new BadgesController();
 
             // Act
-            ViewResult result = petController.Create() as ViewResult;
+            ViewResult result = badgeController.Create() as ViewResult;
 
             // Assert
             Assert.IsNotNull(result);
